@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <section>
+            <div>
+                <div class="container p-5 col-lg-10 mx-auto">
+                    <h1 class="display-4 text-center">MLB Draftkings Players</h1>
+                </div>
+            </div>
+            <div class="container p-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Position</th>
+                            <th>Team</th>
+                            <th>Salary</th>
+                            <th>Game Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#players}}
+                            <tr>
+                                <td>{{Name}}</td>
+                                <td>{{Position}}</td>
+                                <td>{{TeamAbbrev}}</td>
+                                <td>${{Salary}}</td>
+                                <td>{{GameInfo}}</td>
+                            </tr>
+                        {{/players}}
+                    </tbody>
+                </table>                
+            </div>
+        </section>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

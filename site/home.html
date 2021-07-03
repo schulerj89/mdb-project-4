@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <section>
+            <div class="container p-5">
+              <div class="row mb-5 text-center text-white">
+                <div class="col-lg-10 mx-auto">
+                  <h1 class="display-4">MLB Draftkings Upload  </h1>
+                  <p class="lead">Upload Draftkings CSV</p>
+                </div>
+              </div>          
+              <div class="row">
+                <div class="col-lg-5 mx-auto">          
+                    <form action="/api/fileupload" method="post" enctype="multipart/form-data">
+                        <div class="custom-file overflow-hidden rounded-pill mb-5">
+                            <input id="customFile" type="file" name="file" class="custom-file-input rounded-pill">
+                            <label for="customFile" class="custom-file-label rounded-pill">Choose file</label>
+                        </div>
+                        <button class="btn btn-md float-right submit-btn"><input type="submit"></button>
+                    </form>
+                </div>
+                <div class="p-5"><img src="/images/baseball.png" alt="" width="150" class="d-block mx-auto mb-4 rounded-pill"> </div>
+              </div>
+            </div>
+        </section>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
